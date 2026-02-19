@@ -1,7 +1,7 @@
 
 import { OrgNode } from './types';
 
-// Helper to generate unique IDs if missing
+// Helper to generate unique IDs
 const createId = () => Math.random().toString(36).substr(2, 9);
 
 export const INITIAL_DATA: OrgNode = {
@@ -10,7 +10,7 @@ export const INITIAL_DATA: OrgNode = {
   role: "Manager",
   children: [
     {
-      id: "l1",
+      id: createId(),
       name: "Harshal Chaudhari",
       role: "Lead",
       expanded: true,
@@ -23,7 +23,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l2",
+      id: createId(),
       name: "Rushikesh Kadam",
       role: "Lead",
       expanded: true,
@@ -34,7 +34,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l3",
+      id: createId(),
       name: "Prakash Borude",
       role: "Lead",
       expanded: true,
@@ -45,7 +45,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l4",
+      id: createId(),
       name: "Vishal Gaikwad",
       role: "Lead",
       expanded: true,
@@ -56,7 +56,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l5",
+      id: createId(),
       name: "Vrushabh Mundhe",
       role: "Lead",
       expanded: true,
@@ -65,7 +65,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l6",
+      id: createId(),
       name: "Gayatri Kelhe",
       role: "Lead",
       expanded: true,
@@ -80,7 +80,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l7",
+      id: createId(),
       name: "Sanket Bargal",
       role: "Lead",
       expanded: true,
@@ -95,7 +95,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l8",
+      id: createId(),
       name: "Gaurav Shitole",
       role: "Lead",
       expanded: true,
@@ -108,7 +108,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l9",
+      id: createId(),
       name: "Pratik Patil",
       role: "Lead",
       expanded: true,
@@ -121,7 +121,7 @@ export const INITIAL_DATA: OrgNode = {
       ]
     },
     {
-      id: "l10",
+      id: createId(),
       name: "Dheeraj Shukla",
       role: "Lead",
       expanded: true,
@@ -136,4 +136,4 @@ export const INITIAL_DATA: OrgNode = {
 };
 
 export const ADMIN_PASSWORD = "admin123";
-export const STORAGE_KEY = "org_flow_hierarchy_v1";
+export const STORAGE_KEY = "aurus_team_manager_v2";
